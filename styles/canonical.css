@@ -1,0 +1,12 @@
+#canonical-factorizations-process{
+    height: auto;
+    width: auto;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(241, 211, 165);
+    overflow: scroll;
+    margin: 5px;
+    padding: 0px 5px 5px 5px;
+    font-size: 25px;
+}

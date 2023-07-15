@@ -1,0 +1,8 @@
+#heading {
+    position: relative;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid rgb(199, 191, 191);
+    text-shadow: 30%;
+    background-color: rgb(241, 211, 165);
+}

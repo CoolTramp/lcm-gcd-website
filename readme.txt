@@ -1,0 +1,1 @@
+This is a website that serves to calculate the least common multiple (LCM) or greatest common divisor (GCD).

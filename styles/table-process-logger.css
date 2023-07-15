@@ -1,0 +1,34 @@
+#prime-factorization-container {
+    margin: 5px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 1px;
+    display: inline-block;
+   }
+   .scroll-overflow {
+    overflow: scroll;
+   }
+   #prime-factorization-process { 
+    background-color: rgba(231, 225, 252, 0.038);
+
+    display: inline-block;
+  }
+  /* Styles for the table with ID table-with-factorization,
+  which will be dynamically created
+  using The DivisionProcessLogger class*/
+  #table-with-factorization th {
+    position: relative;
+    z-index: 3;
+    padding: 5px;
+    margin: 100px;
+    /* border: 1px solid rgb(245, 201, 144); */
+    /* border: 1px solid rgba(128, 128, 128, 0.629); */
+    border-radius: 2px;
+    vertical-align: top; 
+    background-color: rgb(250, 208, 147);
+    font-size: 20px;
+  }
+  #table-with-factorization {
+    border-spacing: 10px 10px;
+  }
+  

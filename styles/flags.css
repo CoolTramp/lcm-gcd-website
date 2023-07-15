@@ -1,0 +1,59 @@
+#all-flags {
+    width: 50px;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+
+}
+#container-languages {
+    width: 50px;
+    height: 200px;
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes flags-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes flags-down {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+#flags-toggle {
+    position: relative;
+    z-index: 1;
+    background-image: url('../img/flags/flag_en.png');
+}
+
+
+#flags-toggle:hover {
+    transform: scale(1.1);
+
+}
+
+.any-flags {
+    position: relative;
+    z-index: 3;
+    width: 50px;
+    height: 30px;
+    background-size: 50px 30px;
+    background-repeat: no-repeat;
+    transition: transform 1s;
+}
+
