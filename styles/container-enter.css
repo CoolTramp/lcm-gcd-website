@@ -1,8 +1,8 @@
+
 #container-enter {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30 auto;
     width: 400px;
+    min-height: 0;
     height: 80px;
     border-radius: 3px;
     border: 1px solid rgb(211, 210, 210);
@@ -11,8 +11,7 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 30px 20px;
     font-size: 25px;
-
-}
+ }
 
 input[type="checkbox"]:checked {
     background-color: beige;

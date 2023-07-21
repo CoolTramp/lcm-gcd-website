@@ -15,7 +15,6 @@ import '../styles/spans.css'
 import '../styles/input.css'
 import '../styles/canonical.css'
 import '../styles/answers.css'
-import '../styles/show-smoothly-el.css'
 
 
 // import { Canonical } from './calculate/Canonical.js'
