@@ -12,7 +12,6 @@ import { GCD } from '../calculate/GCD.js'
   const inputNumber = document.getElementById('input-number');
   const btnAddNumber = document.getElementById('btn-add-number');
   const btnDeleteNumber = document.getElementById('btn-del-number');
-  // const btnClearAll = document.getElementById('btn-clear-all');
   const btnTrash = document.getElementById('btn-trash');
   const userNumbersContainer = document.getElementById('user-numbers-container');
 
@@ -38,8 +37,6 @@ import { GCD } from '../calculate/GCD.js'
       showContainerWithEnter();
     } 
   });
-
-
   
   function showContainerWithEnter() {
     containerEnter.style.display = 'grid';
@@ -58,7 +55,6 @@ import { GCD } from '../calculate/GCD.js'
       : showPromptForUser();
   
     cleanInput();
-    // inputNumber.value = '';
   }
 
   function cleanInput() {
@@ -76,7 +72,7 @@ import { GCD } from '../calculate/GCD.js'
   }
   
   //================
-  //show user nubmer
+  //show user number
   //================
   /**
    * Place new div element with number of user in div 
@@ -192,7 +188,7 @@ import { GCD } from '../calculate/GCD.js'
   
   function removeAllUserNumberElements() {
     for (let i=0; i<userNumbersContainer.childElementCount; i++) {
-      setTimeout(deleteUserNumberElement, i * 110);
+      setTimeout(deleteUserNumberElement, i*110);
     }
 
   }
@@ -207,6 +203,7 @@ import { GCD } from '../calculate/GCD.js'
 
   //==============
   //HTMLElement div with user number which the user drag
+  //==============
   let holderItem;
 
   /**
