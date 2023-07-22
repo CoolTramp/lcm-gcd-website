@@ -1,4 +1,4 @@
-import { PrimeExponentVisualizer } from "../createElements/PrimeExponentVisualizer.js"
+import { StringBuilder } from "../createElements/StringBuilder.js"
 
 export class LCM {
     /**
@@ -60,7 +60,7 @@ export class LCM {
     * where will place prime exponent;
     */
     renderDetailedAnswerOnHTMLElement(logger) {
-        const primeExponent = new PrimeExponentVisualizer(logger);
+        const primeExponent = new StringBuilder(logger);
         const string =  
            primeExponent.getAnswerString(this._data, 'maxDegree');
            logger.innerHTML = string;

@@ -1,5 +1,5 @@
 import { PreparingCalculations } from "./PreparingCalculations.js";
-import { PrimeExponentVisualizer } from "../createElements/PrimeExponentVisualizer.js"
+import { StringBuilder } from "../createElements/StringBuilder.js"
 /**
  * The Degree class for compute the degree of number
  * 
@@ -172,10 +172,17 @@ _initializeCanonical() {
  * place the string
  */
 renderPrimeExponentOnHTMLElement(logger) {
-  const primeExponent = new PrimeExponentVisualizer(logger);
-  const string = 
-    primeExponent.getPrimeExponentString(this._canonical, 'degree');
-    logger.innerHTML = string;
+    logger.innerHTML = this.getString();
+}
+
+/**
+ * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
+ * @returns {String} - the rendering string with the prime factorization of the number.
+ * Example: 12 = 2<sup>2</sup>·3&nbsp;&nbsp;&nbsp;100 = 2<sup>2</sup>·5<sup>2</sup>
+ */
+getString() {
+  const stringBuilder = new StringBuilder();
+  return stringBuilder.getPrimeExponentString(this._canonical, 'degree');
 }
 
 get degrees() {

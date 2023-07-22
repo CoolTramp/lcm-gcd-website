@@ -1,4 +1,4 @@
-import { PrimeExponentVisualizer } from "../createElements/PrimeExponentVisualizer.js"
+import { StringBuilder } from "../createElements/StringBuilder.js"
 
 export class GCD {
   /**
@@ -53,7 +53,7 @@ export class GCD {
    * where will place prime exponent;
    */
    renderDetailedAnswerOnHTMLElement(logger) {
-     const primeExponent = new PrimeExponentVisualizer(logger);
+     const primeExponent = new StringBuilder(logger);
      const string =  
         primeExponent.getAnswerString(this._data, 'minDegree');
         logger.innerHTML = string;
