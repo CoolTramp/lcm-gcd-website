@@ -28,16 +28,21 @@
         <br>
         <div id="user-numbers-container"></div>
 
-        <div id="container-enter" style="display: none;">
-          <span id="span-in-container-enter">what do you want to solve?</span>
-          <p id="text-checkbox-lcm">LCM</p>
-          <input type="checkbox" name="LCM" id="checkbox-lcm">
+        <div class="hidden-container">
+          <div style="min-height: 0;">
+            <div id="container-enter" style="display: grid;">
+              <span id="span-in-container-enter">what do you want to solve?</span>
+              <p id="text-checkbox-lcm">LCM</p>
+              <input type="checkbox" name="LCM" id="checkbox-lcm">
 
-          <p id="text-checkbox-gcd">GCD</p>
-          <input type="checkbox" name="GCD" id="checkbox-gcd"> 
+              <p id="text-checkbox-gcd">GCD</p>
+              <input type="checkbox" name="GCD" id="checkbox-gcd"> 
 
-          <div id="btn-enter" title="click to calculate"></div>
+              <div id="btn-enter" title="click to calculate"></div>
+            </div>
+          </div>
         </div>
+
       </div>
 
       <div id="computation-container" style="display: none">

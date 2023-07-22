@@ -37,11 +37,15 @@ import { GCD } from '../calculate/GCD.js'
       showContainerWithEnter();
     } 
   });
-  
-  function showContainerWithEnter() {
-    containerEnter.style.display = 'grid';
-  }
 
+  const hiddenContainerEnter = document.getElementsByClassName('hidden-container')[0];
+  function showContainerWithEnter() {
+    hiddenContainerEnter.classList.add('show-container');
+  }
+  function hideContainderWithEnter() {
+    hiddenContainerEnter.classList.remove('show-container');
+  }
+  
   /**
    * Renders a number from user input on the page if it is a positive integer.
    * If the user input is not a positive integer, the function will call the 
@@ -158,9 +162,7 @@ import { GCD } from '../calculate/GCD.js'
     }
   }
 
-  function hideContainderWithEnter() {
-    containerEnter.style.display = 'none';
-  }
+
 
   btnDeleteNumber.addEventListener('click', function() {
     deleteUserNumberElement();
