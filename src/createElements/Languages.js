@@ -68,7 +68,7 @@ import { renderAllFlagsOnPage } from './renderFlags.js'
   const placeholderForInputNumber = [
     'type numbers and click enter', 
     'напиши числа и нажми enter',
-    'napisz liczbę and nacisnij enter'
+    'napisz liczbę i nacisnij enter'
   ]
 
   const warningsForBadUserInput = [
