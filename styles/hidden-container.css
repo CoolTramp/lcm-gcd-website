@@ -1,0 +1,9 @@
+.hidden-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 1s;
+}
+.show-container {
+    grid-template-rows: 1fr;
+}

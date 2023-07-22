@@ -1,5 +1,4 @@
 import './createElements/Languages.js'
-import './createElements/HTMLTableUserNumbers.js'
 import './createElements/flags.js'
 import './createElements/renderFlags.js'
 
@@ -14,6 +13,7 @@ import '../styles/spans.css'
 import '../styles/input.css'
 import '../styles/canonical.css'
 import '../styles/answers.css'
+import '../styles/hidden-container.css'
 
 
 // import { Canonical } from './calculate/Canonical.js'
