@@ -166,7 +166,6 @@ export class Canonical extends PreparingCalculations {
   _initializeCanonical() {
     this._canonical[this._numbers[this._countUserNumbers]] = {};
   }
-
   /**
    * Gets and renders string on wep page.
    * @param {HTMLElement} logger - a place in HTML page
@@ -175,7 +174,6 @@ export class Canonical extends PreparingCalculations {
   renderPrimeExponentOnHTMLElement(logger) {
       logger.innerHTML = this.getString();
   }
-
   /**
    * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
    * @returns {String} - the rendering string with the prime factorization of the number.

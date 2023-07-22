@@ -60,7 +60,6 @@ export class LCM {
     * where will place the string
     */
     renderDetailedAnswerOnHTMLElement(logger) {
-      console.log(this.getString())
      logger.innerHTML = this.getString();
     }
  
