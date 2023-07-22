@@ -1,7 +1,7 @@
 import { PrimeFactorization } from './PrimeFactorization.js'
 import { TrackingDivideHistory } from './TrackingDivideHistory.js'
 import { PadFormatter } from '../format/PadFormatter.js'
-import { HTMLTableCreator } from '../createElements/HTMLTablePrimeFactorizationProcess.js'
+import { HTMLTableCreator } from '../createElements/HTMLTableCreator.js'
 
 const tableWithFactorization = document.getElementById('table-with-factorization');
 
