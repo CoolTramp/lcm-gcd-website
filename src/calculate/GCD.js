@@ -53,21 +53,21 @@ export class GCD {
    * where will place the string
    */
    renderDetailedAnswerOnHTMLElement(logger) {
-     logger.innerHTML = this.getString()
+     logger.innerHTML = this.getString();
    }
-  
-  /**
-   * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
-   * @returns {String} - the rendering string with the prime factorization of the number.
-   * Example: (100,12)&nbsp; 2<sup>2</sup> = 4
-   */
-  getString() {
-    const stringBuilder = new StringBuilder();
-    return stringBuilder.getAnswerString(this._data, 'minDegree');
-  }
 
-  renderAnswerOnly(logger) {
-    logger.innerHTML = this._data.answer;
-  }
-  }
+   /**
+    * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
+    * @returns {String} - the rendering string with the prime factorization of the number.
+    * Example: (100,12)&nbsp; 2<sup>2</sup> = 4
+    */
+   getString() {
+     const stringBuilder = new StringBuilder();
+     return stringBuilder.getAnswerString(this._data, 'minDegree');
+   }
+ 
+   renderAnswerOnly(logger) {
+     logger.innerHTML = this._data.answer;
+   }
+}
   
