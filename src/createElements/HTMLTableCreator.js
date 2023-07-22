@@ -17,8 +17,7 @@ export class HTMLTableCreator {
      * log HTML table on HTMLElement logger
      */
     logTable(strings) {
-      const stringForLog = this._creatTableForLog(strings);
-      this._logger.innerHTML = stringForLog;
+      this._logger.innerHTML = this._creatTableForLog(strings);
     }
     /**
      * Creats HTML table.
