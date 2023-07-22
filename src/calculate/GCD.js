@@ -46,18 +46,25 @@ export class GCD {
     _recordLCMinData(lcm) {
      this._data['answer'] = lcm;
    }
-   /**
-   * To log the detailid process of prime factorization on the HTML
-   * Example; GCD (10,2)  2 = 2
-   * @param {HTMLElement} logger is the place in HTML
-   * where will place prime exponent;
+
+  /**
+   * Gets and renders string on wep page.
+   * @param {HTMLElement} logger - a place in HTML page
+   * where will place the string
    */
    renderDetailedAnswerOnHTMLElement(logger) {
-     const primeExponent = new StringBuilder(logger);
-     const string =  
-        primeExponent.getAnswerString(this._data, 'minDegree');
-        logger.innerHTML = string;
+     logger.innerHTML = this.getString()
    }
+  
+  /**
+   * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
+   * @returns {String} - the rendering string with the prime factorization of the number.
+   * Example: (100,12)&nbsp; 2<sup>2</sup> = 4
+   */
+  getString() {
+    const stringBuilder = new StringBuilder();
+    return stringBuilder.getAnswerString(this._data, 'minDegree');
+  }
 
   renderAnswerOnly(logger) {
     logger.innerHTML = this._data.answer;
