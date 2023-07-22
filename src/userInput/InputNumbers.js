@@ -245,8 +245,8 @@ import { GCD } from '../calculate/GCD.js'
   //enter
   //======
 
-const logger = document.getElementById("prime-factorization-process");
-const degrees = document.getElementById('canonical-factorizations-process');
+const primeFactorizationProcess = document.getElementById("prime-factorization-process");
+const canonicalFactorizationProcess = document.getElementById('canonical-factorizations-process');
 const stringNamedLCMInTop = document.getElementById('string-named-LCM-in-top');
 const stringNamedGCDInTop = document.getElementById('string-named-GCD-in-top');
 const stringNamedLCMInBottom = document.getElementById('string-named-LCM-in-bottom');
@@ -263,8 +263,8 @@ function compute() {
   const numArray = prepareNumberForCamputing(allUserNumbers);
   const canonical = new Canonical(...numArray);
   
-  canonical.renderProcessOfDividionOnHTMLElement(logger);
-  canonical.renderPrimeExponentOnHTMLElement(degrees);
+  canonical.renderProcessOfDividionOnHTMLElement(primeFactorizationProcess);
+  canonical.renderPrimeExponentOnHTMLElement(canonicalFactorizationProcess);
 
   checkCheckboxes();
 

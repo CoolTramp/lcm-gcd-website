@@ -55,7 +55,6 @@ export class GCD {
    renderDetailedAnswerOnHTMLElement(logger) {
      logger.innerHTML = this.getString();
    }
-
    /**
     * Gets a string for rendering, containing the prime factorization of the number with exponent degrees.
     * @returns {String} - the rendering string with the prime factorization of the number.
