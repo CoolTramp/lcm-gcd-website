@@ -44,64 +44,66 @@
         </div>
 
       </div>
-
-      <div id="computation-container" style="display: none">
-      <table id="answer-container-top">
-        <tr>
-          <td>
-            <div id='string-named-LCM-in-top'>LCM</div>
-          </td>
-          <td>
-            <div id="lcm-answer-top"></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div id="string-named-GCD-in-top">GCD</div>
-          </td>
-          <td>
-            <div id="gcd-answer-top"></div> 
-          </td>
-        </tr>
-      </table>
-
-      <span id="span-above-prime-factorization">
-        decompose the numbers into prime factors:
-      </span>
-      <br>
-      <div id="prime-factorization-container" class="scroll-overflow">
-          <div id="prime-factorization-process">
-          </div> 
-     </div>
-      <br>
-      <span id="span-above-canonical-factorizations">
-        create canonical factorizations for each of the given numbers:
-      </span>
-      <br>
-        <div id="canonical-factorizations-process"></div>
-      <br>
-      <span id="span-answer">answer:</span>
-      <br>
-      <table  id="answer-container-botton">
-        <tr>
-          <td>
-            <div id='string-named-LCM-in-bottom'>LCM</div>
-          </td>
-          <td>
-            <div id="lcm-answer"></div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div id="string-named-GCD-in-bottom">GCD</div>
-          </td>
-          <td>
-            <div id="gcd-answer"></div> 
-          </td>
-        </tr>
-      </table>
-    </div>
-  
+      <div class="hidden-container">
+        <div style="min-height: 0;">
+        <div id="computation-container" style="display: block">
+          <table id="answer-container-top">
+            <tr>
+              <td>
+                <div id='string-named-LCM-in-top'>LCM</div>
+              </td>
+              <td>
+                <div id="lcm-answer-top"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="string-named-GCD-in-top">GCD</div>
+              </td>
+              <td>
+                <div id="gcd-answer-top"></div> 
+              </td>
+            </tr>
+          </table>
+        
+          <span id="span-above-prime-factorization">
+            decompose the numbers into prime factors:
+          </span>
+          <br>
+          <div id="prime-factorization-container" class="scroll-overflow">
+              <div id="prime-factorization-process">
+              </div> 
+         </div>
+          <br>
+          <span id="span-above-canonical-factorizations">
+            create canonical factorizations for each of the given numbers:
+          </span>
+          <br>
+            <div id="canonical-factorizations-process"></div>
+          <br>
+          <span id="span-answer">answer:</span>
+          <br>
+          <table  id="answer-container-botton">
+            <tr>
+              <td>
+                <div id='string-named-LCM-in-bottom'>LCM</div>
+              </td>
+              <td>
+                <div id="lcm-answer"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div id="string-named-GCD-in-bottom">GCD</div>
+              </td>
+              <td>
+                <div id="gcd-answer"></div> 
+              </td>
+            </tr>
+          </table>
+        </div>
+        </div>
+      </div>
     <script src="./dist/bundle.js"></script>
 </body>
 </html>

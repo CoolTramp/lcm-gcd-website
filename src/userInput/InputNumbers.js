@@ -45,7 +45,7 @@ import { GCD } from '../calculate/GCD.js'
   function hideContainderWithEnter() {
     hiddenContainerEnter.classList.remove('show-container');
   }
-  
+
   /**
    * Renders a number from user input on the page if it is a positive integer.
    * If the user input is not a positive integer, the function will call the 
@@ -334,8 +334,9 @@ function show(...elements) {
   }
 }
 
+const hiddenComputationContainer = document.getElementsByClassName('hidden-container')[1];
 function showComputationContainer() {
-  document.getElementById('computation-container').style.display = 'block';
+  hiddenComputationContainer.classList.add('show-container');
 }
 
 btnEnter.addEventListener('click', ()=> {
