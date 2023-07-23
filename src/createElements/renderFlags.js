@@ -41,11 +41,10 @@ export function renderAllFlagsOnPage() {
  }
 
  function addImage(el, flagLanguage) {
-     el.style.backgroundImage = `url(${imagesPath + flagLanguage}.png)` 
+     el.style.backgroundImage = `url('${imagesPath + flagLanguage}.png')` 
  }
  
-//  renderAllFlagsOnPage();
- document.addEventListener('DOMContentLoaded', function() {
-    renderAllFlagsOnPage();
-  });
+ document.addEventListener('DOMContentLoaded',
+    renderAllFlagsOnPage
+  );
   
