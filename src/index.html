@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>LCM & GCD</title>
   </head>
-  <body style="background-color: rgb(226, 218, 205);">
+  <body style="background-color: rgb(226, 218, 205)">
     <header>
       <div id="flags-toggle" class="any-flags"></div>
 
       <div id="all-flags">
-        <div id="container-languages">
-        </div>
+        <div id="container-languages"></div>
       </div>
-      <H1 id="heading" >
-        Here you can compute LCD and GCD
-      </H1>
+      <h1 id="heading">Here you can compute LCD and GCD</h1>
     </header>
 
-      <div id="input-container">
-        <span id="span-prompt-for-user" style="visibility: hidden; display: inline-block;"></span>
-        <br>
-        <input type="number" placeholder="type number and click enter" onfocus="this.placeholder=''" onblur="this.placeholder='type number and click enter'"
-         id="input-number" min="2" max="1000000000000">
-        <div id="btn-add-number" title="add number"></div>
-        <div id="btn-del-number" title="delete last number"></div>
-        <div id="btn-trash" title="delete all numbers" ></div>
-        <br>
-        <div id="user-numbers-container"></div>
+    <div id="input-container">
+      <span
+        id="span-prompt-for-user"
+        style="visibility: hidden; display: inline-block"
+      ></span>
+      <br />
+      <input
+        type="number"
+        placeholder="type number and click enter"
+        onfocus="this.placeholder=''"
+        onblur="this.placeholder='type number and click enter'"
+        id="input-number"
+        min="2"
+        max="1000000000000"
+      />
+      <div id="btn-add-number" title="add number"></div>
+      <div id="btn-del-number" title="delete last number"></div>
+      <div id="btn-trash" title="delete all numbers"></div>
+      <br />
+      <div id="user-numbers-container"></div>
 
-        <div class="hidden-container">
-          <div style="min-height: 0;">
-            <div id="container-enter" style="display: grid;">
-              <span id="span-in-container-enter">what do you want to solve?</span>
-              <p id="text-checkbox-lcm">LCM</p>
-              <input type="checkbox" name="LCM" id="checkbox-lcm">
+      <div class="hidden-container">
+        <div style="min-height: 0">
+          <div id="container-enter" style="display: grid">
+            <span id="span-in-container-enter">what do you want to solve?</span>
+            <p id="text-checkbox-lcm">LCM</p>
+            <input type="checkbox" name="LCM" id="checkbox-lcm" />
 
-              <p id="text-checkbox-gcd">GCD</p>
-              <input type="checkbox" name="GCD" id="checkbox-gcd"> 
+            <p id="text-checkbox-gcd">GCD</p>
+            <input type="checkbox" name="GCD" id="checkbox-gcd" />
 
-              <div id="btn-enter" title="click to calculate"></div>
-            </div>
+            <div id="btn-enter" title="click to calculate"></div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="hidden-container">
-        <div style="min-height: 0;">
+    <div class="hidden-container">
+      <div style="min-height: 0">
         <div id="computation-container" style="display: block">
           <table id="answer-container-top">
             <tr>
               <td>
-                <div id='string-named-LCM-in-top'>LCM</div>
+                <div id="string-named-LCM-in-top">LCM</div>
               </td>
               <td>
                 <div id="lcm-answer-top"></div>
@@ -61,33 +68,32 @@
                 <div id="string-named-GCD-in-top">GCD</div>
               </td>
               <td>
-                <div id="gcd-answer-top"></div> 
+                <div id="gcd-answer-top"></div>
               </td>
             </tr>
           </table>
-        
+
           <span id="span-above-prime-factorization">
             decompose the numbers into prime factors:
           </span>
-          <br>
+          <br />
           <div id="prime-factorization-container">
-            <div id="prime-factorization-process">
-            </div> 
+            <div id="prime-factorization-process"></div>
           </div>
-          <br>
+          <br />
 
           <span id="span-above-canonical-factorizations">
             create canonical factorizations for each of the given numbers:
           </span>
-          <br>
-            <div id="canonical-factorizations-process"></div>
-          <br>
+          <br />
+          <div id="canonical-factorizations-process"></div>
+          <br />
           <span id="span-answer">answer:</span>
-          <br>
-          <table  id="answer-container-botton">
+          <br />
+          <table id="answer-container-botton">
             <tr>
               <td>
-                <div id='string-named-LCM-in-bottom'>LCM</div>
+                <div id="string-named-LCM-in-bottom">LCM</div>
               </td>
               <td>
                 <div id="lcm-answer"></div>
@@ -98,12 +104,12 @@
                 <div id="string-named-GCD-in-bottom">GCD</div>
               </td>
               <td>
-                <div id="gcd-answer"></div> 
+                <div id="gcd-answer"></div>
               </td>
             </tr>
           </table>
         </div>
-        </div>
       </div>
-</body>
+    </div>
+  </body>
 </html>
